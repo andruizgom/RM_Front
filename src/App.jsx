@@ -49,7 +49,7 @@ function App() {
       const key = "henrym-andruizgom"
       const characterDuplicated = characters.find(character => character.id == id) 
       try {
-         const {data} = await axios(`http://localhost:3001/rickandmorty/character/${id}`)
+         const {data} = await axios(`https://rick-and-morty-server.onrender.com/rickandmorty/character/${id}`)
          if(data.name && !characterDuplicated){
             setCharacters((oldChars) => [...oldChars, data]);
          }
