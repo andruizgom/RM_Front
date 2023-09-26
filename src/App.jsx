@@ -20,7 +20,7 @@ function App() {
    const login = async (userData) => {
       try {
          const { email, password } = userData;
-         const URL = 'http://localhost:3001/rickandmorty/login/';
+         const URL = 'https://rick-and-morty-server.onrender.com/rickandmorty/login/';
    
          const {data} = await axios(URL + `?email=${email}&password=${password}`)
          const { access } = data;
