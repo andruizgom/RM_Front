@@ -12,7 +12,7 @@ const Detail = () => {
     useEffect(() => {
 
         const key = "henrym-andruizgom"
-        axios(`http://localhost:3001/rickandmorty/character/${id}`).then(({ data }) => {
+        axios(`https://rick-and-morty-server.onrender.com/rickandmorty/character/${id}`).then(({ data }) => {
            if (data.name) {
               setCharacter(data);
            } else {
